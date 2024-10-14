@@ -1,0 +1,11 @@
+<div>
+  <div class="card-body" *ngIf="post">
+    <h5 class="card-title">{{ post.title }}</h5>
+    <p class="card-text">{{ post.body }}</p>
+    <ul>
+      <li *ngFor="let tag of post.tags" class="" list-group-item->
+        {{ tag }}
+      </li>
+    </ul>
+  </div>
+</div>
